@@ -1,3 +1,3 @@
 ## Notebook sobre Java Estruturas
 
-> [Notebook1](notebook/lab02-java-estruturas-ra247257.ipynb)
+> [Notebook1](notebook/emprestimo02-tad-ra247257.ipynb)
