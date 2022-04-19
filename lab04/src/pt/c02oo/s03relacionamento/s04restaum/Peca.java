@@ -6,6 +6,7 @@ public class Peca {
 	public String posValida;
 	public String posTabuleiro;
 	
+	// construtor da peça
 	public Peca(int linha, int coluna, String posValida, String posTabuleiro) {
 		this.linha = linha;
 		this.coluna = coluna;

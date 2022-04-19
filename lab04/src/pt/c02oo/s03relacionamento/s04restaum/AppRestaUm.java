@@ -36,16 +36,17 @@ public class AppRestaUm {
     	  int destinoJ = commands[i].charAt(3) - fixo;
     	  int destinoI = commands[i].charAt(4) - '1';
     	  
+    	  // checa se o movimento que está tentando fazer é na mesma linha ou coluna
     	  if (origemI != destinoI && origemJ != destinoJ) {
     		  System.out.println("Movimento Inválido");
     	  }
+    	  // checa se o movimento que esta tentando fazer é pulando apenas uma casa
     	  else if (destinoI - origemI > 2 && destinoJ - origemJ > 2) {
     		  System.out.println("Movimento Inválido");
     	  }
     	  else {
     		  board = tabuleiro.tentativa(origemI, origemJ, destinoI, destinoJ);
     	  }
-    	  board = tabuleiro.tentativa(origemI, origemJ, destinoI, destinoJ);
     	  
     	  String nome = "source: " + commands[i].substring(0, 2) + "; target: " + commands[i].substring(3, 5);
     	  tk.writeBoard(nome, board);

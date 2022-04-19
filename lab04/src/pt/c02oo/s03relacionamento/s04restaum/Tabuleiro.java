@@ -2,8 +2,10 @@ package pt.c02oo.s03relacionamento.s04restaum;
 
 public class Tabuleiro {
 	char board[][];
+	// cria um segundo tabuleiro de pecas, que vai guardar seus estados e posições
 	Peca segundoTabuleiro[][];
 	
+	// construtor do tabuleiro
 	public Tabuleiro (char board[][]) {
 		this.board = board;
 		this.segundoTabuleiro = new Peca[7][7];
@@ -31,6 +33,7 @@ public class Tabuleiro {
 		}
 	}
 	
+	// metodo para as tentativas, verificando as condiçoes necessarias para o movimento
 	public char[][] tentativa(int origemI, int origemJ, int destinoI, int destinoJ) {
 		if (segundoTabuleiro[origemI][origemJ].posValida == "preenchida") {
 			if (segundoTabuleiro[destinoI][destinoJ].posValida == "vazia" && segundoTabuleiro[destinoI][destinoJ].posTabuleiro == "dentro") {
